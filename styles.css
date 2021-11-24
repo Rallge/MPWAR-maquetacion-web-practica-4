@@ -1,6 +1,7 @@
-html{
-    margin:0;
-    padding:0;
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vh;
 }
 body {
   display: inline-flex;
@@ -9,19 +10,40 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
+  width: 100vh;
 }
 
 header {
   order: 0;
   flex: 0 1 auto;
   align-self: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 100vh;
+  font-family: monospace;
 }
 
 main {
   order: 0;
   flex: 0 1 auto;
   align-self: center;
-  background-color:#f2f2f2 ;
+  background-color: #f2f2f2;
+  width: 100vh;
+  font-family: monospace;
+}
+
+section {
+  background-color: #ffffff;
+  margin: 40px;
+  border-radius: 40px;
+}
+
+section > div {
+  font-weight: bold;
 }
 
 footer {
@@ -35,6 +57,7 @@ footer {
   justify-content: center;
   align-content: center;
   align-items: center;
+  width: 100vh;
 }
 
 nav {
@@ -46,23 +69,30 @@ nav {
   align-items: center;
   color: white;
   box-sizing: border-box;
-  border: 3px solid black;
 }
-nav:nth-child(1) {
+.nav1 {
   order: 0;
   flex: 0 1 auto;
   align-self: center;
   background-color: #016777;
   box-sizing: border-box;
+  color: white;
+  width: 20vh;
+  text-align: center;
+  padding: 20px;
 }
 
-nav > div {
+.nav2 {
   order: 0;
   flex: 0 1 auto;
   align-self: center;
   color: white;
   box-sizing: border-box;
   background-color: #0094a8;
+  width: 80vh;
+  text-align: center;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 footer > img {
@@ -73,4 +103,16 @@ footer > img {
   margin-left: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+div > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+section > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
 }
