@@ -1,0 +1,26 @@
+.nav {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: white;
+  box-sizing: border-box;
+}
+nav:nth-child(1) {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: center;
+  background-color: #016777;
+  box-sizing: border-box;
+}
+
+nav > div {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: center;
+  color: white;
+  box-sizing: border-box;
+  background-color: #0094a8;
+}
